@@ -1,0 +1,23 @@
+section.obits__content
+    .obits__title Obituaries
+    .obits__serch
+        form.searching-form
+            input.search_input(type="text" placeholder="search" name="search")
+            button.search__btn find obituary
+        .obits__search-worning * the list of obituaries contains data for the last 12 months only
+    .obits__container
+        ul.obits__list
+            -
+                var obitslistData = [1,2,3,4,5,6,7,8,9,10,11,12];
+
+            each item in obitslistData
+                li.obits__list-item
+                    .obits__list-img-wrap
+                        img(src="#").obits__list-img
+                    .obits__list-firstname
+                    .obits__list-lastname
+                    .obits__list-links-wrap
+                        a(href="#").obits__list-link view
+
+
+

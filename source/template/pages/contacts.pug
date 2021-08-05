@@ -1,0 +1,16 @@
+extends ../_template
+
+block variables
+    - var title = 'Piece fo Heaven funeral home/contacts'
+    - var jsfileName = '/assets/js/contacts.js';
+    - var map = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBteYC9sMR6OiooedxOXZn_ryBN6hOJJ-0&callback=initMap';
+block content
+    .popup_menu__burger
+        img.popup_menu__burger-icon(src="assets/img/icons/burger_w.png" alt="menu icon")
+    include ../common/pop-up_menu
+    include ../common/header_common
+    .main-container
+        include ../common/menu
+        include ../common/contacts_content
+    include ../common/footer
+

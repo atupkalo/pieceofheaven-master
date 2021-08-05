@@ -1,0 +1,19 @@
+
+.menu
+    ul.menu__list
+        -
+            var menuData = [
+                ['HOME', 'index.html', '/index.html'],
+                ['ABOUT', 'about.html', '/about.html'],
+                ['OBITUARIES', 'obits.html', '/obits.html'],
+                ['SERVICES', 'services.html', '/services.html'],
+                ['PRE-PLANNING', 'pre-planning.html', '/pre-planning.html'],
+                ['FEEDBACK', 'feedbacks.html', '/feedbacks.html'],
+                ['CONTACTS', 'contacts.html', '/contacts.html'],
+                ['MONUMENTS', 'http://pieceofheavenmonuments.com', ' ']
+            ]
+
+        each item in menuData
+            li.menu-item
+                a(href=`${item[1]}` data-pagename=`${item[2]}`).menu__link #{item[0]}
+

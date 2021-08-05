@@ -1,0 +1,142 @@
+.obits__content{
+  background-image: url("/assets/img/obits_bg.png");
+  background-repeat: repeat;
+  border-top: 1px solid #cccccc;
+  width: 96%;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+//----------------------------------------------------------------  Up coming
+.obits__upcoming{
+  padding-bottom: 120px;
+}
+.upcoming__title{
+  background: #ffffff;
+  text-align: center;
+  @include font(42px, $title, $gray);
+  padding: 90px 0 60px 0;
+}
+.obits__title{
+  @include font(48px, $title, $gray);
+  padding-top: 55px;
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+  margin-bottom: 30px;
+}
+.upcoming__list{
+  @include flex(column, center, center);
+  margin-bottom: 40px;
+}
+.upcoming__list-item{
+  padding: 7px 0;
+  @include font(20px, $text, $gray);
+  @include flex(row, center, center);
+}
+.upcoming__list-item-name{
+  width: 200px;
+  font-weight: bold;
+  text-align: right;
+}
+.upcoming__list-item-input{
+  padding: 5px;
+  border: 1px solid #cccccc;
+  width: 200px;
+  text-align: left;
+  margin-left: 30px;
+}
+.upcoming__btn{
+  @include flex(row, center, center);
+}
+.upcoming__link--flowers, .upcoming__link--contacts{
+  text-align: center;
+  width: 180px;
+  padding: 7px 0;
+  @include font(20px, $text, $blue);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, .2);
+  border: solid 1px $blue;
+  transition: .3s;
+  &:hover {
+    background: $blue;
+    color: #fff;
+  }
+}
+.upcoming__link--contacts{
+  margin-left: 20px;
+}
+
+.searching-form{
+  @include flex(row, center, center);
+  margin-bottom: 10px;
+}
+
+.search__btn{
+  margin-left: 20px;
+  padding: 7px 15px;
+  background: #fff;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, .2);
+  @include font(18px, $text, $blue);
+  border: 1px solid $blue;
+  transition: .3s;
+  &:hover{
+    background: $blue;
+    color: #fff;
+  }
+}
+.search_input{
+  width: 250px;
+  height: 36px;
+  border: 1px solid $gray;
+  &:hover{
+    border: 1px solid $blue;
+  }
+}
+.obits__search-worning{
+  text-align: center;
+  @include font(16px, $text, #7a7979);
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+//-------------------------------------------------------- obits items
+.obits__list{
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+}
+.obits__list-item{
+  background: #ffffff;
+  width: 300px;
+  margin: 10px 5px;
+  border: 1px solid #7a7979;
+  padding: 3px;
+}
+.obits__list-img{
+  width: 100%;
+}
+.obits__list-img-wrap{
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.obits__list-firstname, .obits__list-lastname{
+  padding: 5px  0 5px 5px;
+  @include font(22px, $text, $gray);
+}
+.obits__list-links-wrap{
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.obits__list-link{
+  font-size: 18px;
+  padding: 7px 20px;
+  border: 1px solid $blue;
+  color: $blue;
+  margin-bottom: 20px;
+  transition-duration: .3s;
+  &:hover{
+    color: #fff;
+    background: $blue;
+  }
+}
+

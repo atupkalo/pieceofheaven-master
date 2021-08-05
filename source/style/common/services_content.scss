@@ -1,0 +1,159 @@
+.services__title{
+  @include font(48px, $title, $gray);
+  padding: 100px 0 10px 0;
+  text-align: center;
+  opacity: 0;
+  transition: 1.5s;
+  background: #ffffff;
+}
+.services__main-desc{
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.services__main-section-text{
+  @include font(20px, $text, $gray);
+  padding: 50px 15px;
+  line-height: 32px;
+}
+.services__hilight-list{
+  background: #EDEEEE;
+  padding: 60px 0;
+   @include flex(column, center, center);
+ }
+.services__hilight-list-item {
+  padding: 20px;
+  @include font(28px, $text, $gray);
+}
+strong{
+  padding-left: 5px;
+  color: $blue;
+}
+//------------------------------------------------   tabs
+
+.services__tabs-container{
+  position: relative;
+}
+.services__tabs-list{
+  @include flex(row, center, center);
+}
+.services__tabs-item{
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+  transition: .3s;
+  width: 33%;
+  cursor: pointer;
+  text-align: center;
+  @include font(32px, $title, $gray);
+  &:hover{
+    background: #edeeef;
+  }
+}
+.services__tabs-title{
+  padding: 20px 0;
+}
+.tabs__title-active{
+  border-top: 2px solid $blue;
+  border-right: 2px solid $blue;
+  border-left: 2px solid $blue;
+  background: #edeeef;
+}
+.services__tabs-cont-list{
+   position: relative;
+   min-height: 650px;
+   background: #edeeef;
+   padding: 10px;
+ }
+
+.services__tabs-cont-item{
+  position: absolute;
+  display: none;
+}
+
+.content__item-active{
+  display: block;
+}
+//------------------------------------------- SS
+.ss__picter-wrap{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 20px;
+}
+.ss__pic{
+  width: 100%;
+  height: 100%;
+}
+.ss__inner-list-item{
+  @include font(18px, $text, $gray);
+  padding: 5px 0;
+  line-height: 26px;
+}
+.ss__text{
+  @include font(20px, $text, $gray);
+  padding: 30px;
+  line-height: 32px;
+}
+.ss__text-inner-list-wrap{
+  padding: 10px;
+  width: 70%;
+  border: 1px dotted $gray;
+  margin: 0 auto;
+}
+.cremation__content{
+  padding: 10px 15px;
+  @include font(20px, $text, $gray);
+  line-height: 32px;
+}
+
+.gen-price__desc{
+  text-align: center;
+  padding: 10px 0;
+  @include font(18px, $text, $gray);
+  font-weight: bold;
+}
+.price-list{
+  padding: 20px;
+  @include flex(row, flex-start, flex-start);
+}
+
+
+//-----------------------------------------------------------------------   price-list-small
+.price-list--s{
+  display: none;
+  padding: 5px;
+}
+.price-list__price--s{
+  padding-left: 15px;
+  font-weight: bold;
+}
+.price-list__desc--s{
+  font-size: 9px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+//----------------------------------------------------------------------------------------------------------------------
+
+.price-list__names, .price-list__price, .price-list__desc{
+  padding: 20px 0;
+  @include font(20px, $text, $gray);
+}
+.price-list__price{
+  @include font(20px, $title, $gray);
+  padding-left: 60px;
+  padding-right: 40px;
+}
+
+.price-list__names{
+  text-decoration: underline;
+}
+.gen-price_-worrning{
+  text-align: center;
+  @include font(18px, $text, #AE1008);
+  font-weight: bold;
+}
+
+
+

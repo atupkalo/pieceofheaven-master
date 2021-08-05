@@ -1,0 +1,157 @@
+.home__content{
+  position: relative;
+}
+.home__main-tile{
+  background: #ffffff;
+  text-align: center;
+  @include font(42rem, $title, $gray);
+  padding: 90px 0;
+}
+.home__top-title{
+  text-align: left;
+  background: #f0f0f0;
+}
+.home__top-title-wrap{
+  margin: 0 auto;
+  width: 60%;
+  padding: 120px 0 60px 0;
+}
+.top-title__desc{
+  @include font(28px, $text, $gray);
+  margin-bottom: 20px;
+}
+.top-title__desc-text{
+  font-weight: 200;
+  @include font(20px, $text, $gray);
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+.top-title__buttons{
+  @include flex(row, flex-start, center);
+  text-align: center;
+}
+.top-title__link {
+  padding: 7px 0;
+  width: 200px;
+  @include font(20px, $text, $blue);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, .2);
+  border: solid 1px $blue;
+  transition: .3s;
+
+  &:hover {
+    background: $blue;
+    color: #fff;
+  }
+}
+.top-title__link--margin{
+  margin-left: 30px;
+}
+
+.home__top-services{
+  margin: 0 auto;
+  @include flex(row, space-between, center);
+  padding-bottom: 90px;
+  width: 60%;
+}
+.home__top-services-wrap{
+  @include flex(column, center, center);
+}
+.home__top-services-icon{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.home__top-services-icon-wrap{
+  width: 80px;
+}
+.home__top-services-text{
+  @include font(22px, $text, $gray);
+  text-align: center;
+}
+//------------------------------------------------------  slider
+.obits__home-title{
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  @include font(42px, $title, $gray);
+}
+.obits__slider-wrap{
+  @include flex(row, center, center);
+}
+.home-obits__list-wrap{
+  position: relative;
+  @include flex(row, center, center);
+  margin-bottom: 120px;
+}
+.home_obits__list{
+  @include flex(row, space-between, center);
+  padding: 0 30px;
+}
+
+.home_obits__item{
+  position: relative;
+  width: 300px;
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+.home_obits__item--middle{
+  margin: 0 30px;
+}
+.obit__img-wrap{
+  margin-bottom: 10px;
+}
+.obit__img{
+  overflow: hidden;
+}
+.obit__img{
+  width: 100%;
+}
+
+.home-page__obits-arrow-left, .home-page__obits-arrow-right{
+  cursor: pointer;
+  width: 50px;
+  opacity: .6;
+  &:hover{
+    opacity: .8;
+  }
+}
+.obits__arrow-icon{
+  width: 100%;
+}
+
+.obits__item-bg-wrap{
+  width: 250px;
+  position: absolute;
+}
+.obits__item-bg-wrap--left{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.obits__item-bg-wrap--right{
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.obits__list-bg{
+  width: 100%;
+  height: 100%;
+}
+.obit__firstname, .obit__lastname, .obit__date{
+  @include font(22px, $text, $gray);
+  margin-bottom: 10px;
+}
+.obit__link-wrap{
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+.obit__link{
+  padding: 5px 15px;
+  border: 1px solid $blue;
+  @include font(18px, $text, $blue);
+  &:hover{
+    background: $blue;
+    color: #ffffff;
+  }
+}

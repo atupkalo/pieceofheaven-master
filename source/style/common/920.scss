@@ -1,0 +1,159 @@
+@media(max-width: 920px){
+  .header{
+    height: 600px;
+  }
+
+  .top_line__phone-icon{
+    width: 40px;
+    height: 40px;
+  }
+  .top_line__fb-icon{
+    width: 40px;
+    height: 40px;
+  }
+  .top_line__phone-text{
+    font-size: 26px;
+  }
+  .top_line__lang{
+    font-size: 20px;
+  }
+  .top_line__content{
+    padding: 10px 80px;
+  }
+ .main_header__title{
+   height: 380px;
+ }
+  .main_header__title-picwrap{
+    width: 96%;
+  }
+  .header__arrow-down{
+    display: none;
+  }
+
+  .menu{
+    display: none;
+  }
+  .popup_menu__burger{
+    display: block;
+  }
+  .home__top-title-wrap{
+    width: 80%;
+  }
+  .home__top-services{
+    width: 80%;
+  }
+  .footer-menu__item{
+    padding: 5px;
+  }
+  .footer-menu__link{
+    font-size: 16px;
+  }
+  .footer__refer-icon{
+    width: 35px;
+    height: 35px;
+  }
+  .footer__refer{
+    width: 70%;
+  }
+  .footer__btm-wrap{
+    width: 90%;
+  }
+  .footer__copyrights{
+    font-size: 16px;
+  }
+  .main_header__container {
+    min-height: 760px;
+  }
+  .main_header__title-secdesc{
+    margin-bottom:50px;
+  }
+  //--------------------------------------------------- services
+
+  .services__tabs-item{
+    font-size: 24px;
+  }
+  //----------------------------------------------------home slider
+  .home-obits__list-wrap{
+    width: 100%;
+    overflow: hidden;
+  }
+
+
+  //----------------------------------------------------obits
+  .obits__title{
+    margin-bottom: 0;
+  }
+  .upcoming__title{
+     padding: 60px 0;
+  }
+  .obits__info-btm-wrap{
+    width: 100%;
+  }
+  .obits__upcoming{
+    padding-bottom: 60px;
+  }
+  .obits-card__title{
+    padding-top: 30px;
+  }
+  .obits-card__title{
+    width: 96%;
+  }
+  .obits-form__title{
+    padding: 60px 0 30px 0;
+  }
+  .obits-wishes-form{
+    width: 70%;
+  }
+    //  -------------------------------------------------------   About
+  .about__title-desc{
+    width: 90%;
+  }
+  .about__bg-slider, .about__bg-slider--limo, .about__bg-slider--lobby{
+    display: none;
+  }
+  .about__slider-small_device{
+    display: block;
+  }
+  .about__employee{
+    margin-top: 0;
+  }
+  //------------------------------------------------------------   Pre-planning
+
+  .preplan__content-wrap{
+    @include flex(column, center, center);
+    flex-direction: column-reverse;
+    background: url("/assets/img/preplan-s.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .preplan__content-left-subtile{
+    text-align: center;
+  }
+  .preplan__content-left{
+    width: 100%;
+  }
+  .preplan__content-text{
+    padding: 0 10px 30px 10px;
+  }
+
+
+//  ---------------------------------------------------------------  Contacts
+  .contacts__content-wrap{
+    @include flex(column,center, center);
+  }
+  .form__wrap{
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .contact__list{
+    width: 98%;
+    padding: 60px 0 90px 0;
+  }
+  .contact__list-item--padding{
+  }
+
+
+}
+
+
+
